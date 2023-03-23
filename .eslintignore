@@ -1,3 +1,4 @@
 *.scss
 *.svg
 commitlint.config.cjs
+jest.config.ts
