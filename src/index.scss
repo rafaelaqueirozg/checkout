@@ -40,6 +40,15 @@ p {
 
 button {
   cursor: pointer;
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: $gray;
+  }
+
+  &:not(:disabled):hover {
+    filter: brightness(1.8);
+  }
 }
 
 /* width */
