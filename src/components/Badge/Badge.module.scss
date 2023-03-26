@@ -1,0 +1,27 @@
+@import '/src/styles/colors';
+@import '/src/styles/variables';
+
+.badge {
+  color: $white;
+  font-size: 12px;
+  border: 1px solid;
+  padding: 5px 10px;
+  text-align: center;
+  width: fit-content;
+  border-radius: $default-border-radius;
+
+  &--primary {
+    border-color: $primary-color;
+    background-color: $primary-color;
+  }
+
+  &--secondary {
+    border-color: $secondary-color;
+    background-color: $secondary-color;
+  }
+
+  &--default {
+    color: $dark-gray;
+    border-color: $light-grayish;
+  }
+}
