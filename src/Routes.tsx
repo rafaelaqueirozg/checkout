@@ -1,3 +1,4 @@
+import { Checkout } from '@pages/Checkout/Checkout';
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 import App from './App';
 
@@ -12,12 +13,12 @@ export const routes = createBrowserRouter([
       },
       {
         path: '/checkout',
-        element: <p>Página de checkout!</p>,
-      },
-      {
-        path: '*',
-        element: <p>Rota não encontrada!</p>,
+        element: <Checkout />,
       },
     ],
+  },
+  {
+    path: '*',
+    element: <p>Rota não encontrada!</p>,
   },
 ]);
