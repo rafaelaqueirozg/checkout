@@ -3,3 +3,6 @@
 commitlint.config.cjs
 jest.config.ts
 vite.config.ts
+jest.*
+babel.config.js
+svgTransform.cjs
