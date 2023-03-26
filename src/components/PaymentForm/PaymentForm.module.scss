@@ -1,0 +1,59 @@
+@import '/src/styles/colors';
+@import '/src/styles/variables';
+
+.form {
+  margin-top: 30px;
+
+  &__fields {
+    gap: 10px;
+    display: flex;
+  }
+
+  &__field {
+    flex: 1;
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
+
+    .input {
+      border: 0;
+      margin-top: 5px;
+      font-size: 18px;
+      line-height: 25px;
+      border-bottom: 1px solid $light-grayish;
+
+      &.select {
+        background-color: transparent;
+
+        &:required:invalid {
+          color: $gray;
+        }
+      }
+
+      &::placeholder {
+        color: $gray;
+      }
+    }
+
+    .label {
+      font-size: 14px;
+      color: $medium-gray;
+    }
+  }
+
+  &__button {
+    border: 0;
+    width: 100%;
+    margin: auto;
+    color: $white;
+    display: block;
+    font-size: 18px;
+    padding: 18px 65px;
+    background-color: $primary-color;
+    border-radius: $button-border-radius;
+  }
+}
