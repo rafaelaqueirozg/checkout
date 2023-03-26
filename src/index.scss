@@ -1,5 +1,13 @@
+@import '/src/styles/colors';
+
 :root {
   font-family: 'DM Sans', sans-serif;
+}
+
+input,
+select,
+button {
+  font-family: inherit;
 }
 
 html,
@@ -9,4 +17,48 @@ body {
 
 #root {
   padding: 30px 68px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $light-grayish;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $grayish-violet;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $primary-color;
 }
