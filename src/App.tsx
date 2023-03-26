@@ -1,11 +1,17 @@
-import './App.scss';
+import { Header } from '@components/Header/Header';
+import { ReactElement } from 'react';
+import { Outlet } from 'react-router-dom';
+import styles from './App.module.scss';
 
-function App() {
+const App = (): ReactElement => {
   return (
-    <div>
-      <h1>Hello World :)</h1>
-    </div>
+    <>
+      <Header />
+      <main className={styles.container}>
+        <Outlet />
+      </main>
+    </>
   );
-}
+};
 
 export default App;
