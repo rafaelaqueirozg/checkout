@@ -14,16 +14,16 @@ interface CreditCard {
 }
 
 const acceptedCreditCards: CreditCard[] = [
-  { logo: eloLogo, alt: 'Cartão da bandeira Elo' },
-  { logo: visaLogo, alt: 'Cartão da bandeira Visa' },
   { logo: mastercardLogo, alt: 'Cartão da bandeira Mastercard' },
   { logo: dinnersclubLogo, alt: 'Cartão da bandeira Dinners Club' },
   { logo: americanexpressLogo, alt: 'Cartão da bandeira American Express' },
+  { logo: visaLogo, alt: 'Cartão da bandeira Visa' },
+  { logo: eloLogo, alt: 'Cartão da bandeira Elo' },
 ];
 
 export const Payment = (): ReactElement => {
   return (
-    <>
+    <div className={styles.payment}>
       <h4>Estamos quase lá!</h4>
       <p>Insira seus dados de pagamento abaixo:</p>
 
@@ -52,6 +52,6 @@ export const Payment = (): ReactElement => {
       </div>
 
       <PaymentForm />
-    </>
+    </div>
   );
 };
