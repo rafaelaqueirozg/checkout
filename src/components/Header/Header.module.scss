@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  &__button {
+    border: 0;
+    cursor: pointer;
+    background: transparent;
+
+    .icon {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  &__logo {
+    width: 58px;
+    height: 40px;
+  }
+
+  &__empty {
+    width: 40px;
+    height: 40px;
+  }
+}
