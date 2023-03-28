@@ -1,0 +1,94 @@
+@import 'src/styles/colors';
+@import 'src/styles/variables';
+
+.card {
+  border: 1px solid $primary-color;
+  border-radius: $default-border-radius;
+  padding: 20px;
+  display: flex;
+
+  &__input {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    outline: none;
+    appearance: none;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px $light-grayish;
+
+    &:checked {
+      box-shadow: 0 0 0 3px $grayish-violet;
+    }
+
+    &:before {
+      width: 60%;
+      height: 60%;
+      content: '';
+      display: block;
+      margin: 20% auto;
+      border-radius: 50%;
+    }
+
+    &:checked:before {
+      background: $primary-color;
+    }
+  }
+
+  &__details {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    .details {
+      &__info {
+        gap: 5px;
+        width: 200px;
+        display: flex;
+        color: $primary-color;
+        flex-direction: column;
+
+        h5 {
+          font-size: 17px;
+          line-height: 20px;
+        }
+
+        strong {
+          font-size: 13px;
+          line-height: 18px;
+        }
+
+        small {
+          font-size: 12px;
+          line-height: 14px;
+          color: $secondary-color;
+        }
+
+        strong,
+        small {
+          display: block;
+          font-weight: 400;
+        }
+      }
+
+      &__discount {
+        margin: 0 56px 0 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    &__details {
+      gap: 10px;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .details {
+        &__discount {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
