@@ -17,3 +17,18 @@ export interface Offer {
   installments: number;
   acceptsCoupon: boolean;
 }
+
+export interface OfferAdapted
+  extends Pick<
+    Offer,
+    | 'period'
+    | 'discountPercentage'
+    | 'description'
+    | 'installments'
+    | 'fullPrice'
+    | 'discountAmmount'
+    | 'id'
+  > {
+  netValue: number;
+  order?: number;
+}
