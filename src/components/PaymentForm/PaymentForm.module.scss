@@ -26,11 +26,19 @@
       line-height: 25px;
       border-bottom: 1px solid $light-grayish;
 
+      &--invalid {
+        border-color: $red;
+      }
+
       &.select {
         background-color: transparent;
 
-        &:required:invalid {
+        &--empty {
           color: $gray;
+        }
+
+        option:not(:disabled) {
+          color: initial;
         }
       }
 
@@ -55,5 +63,22 @@
     padding: 18px 65px;
     background-color: $primary-color;
     border-radius: $button-border-radius;
+    transition: 0.4s;
+  }
+
+  .invalid-feedback {
+    color: $red;
+  }
+}
+
+@media (max-width: 600px) {
+  .form {
+    &__fields {
+      .form {
+        &__field {
+          width: 50%;
+        }
+      }
+    }
   }
 }

@@ -1,5 +1,5 @@
 export interface Subscription {
-  couponCode: null;
+  couponCode: null | string;
   creditCardCPF: string;
   creditCardCVV: string;
   creditCardExpirationDate: string;
@@ -10,3 +10,6 @@ export interface Subscription {
   offerId: number;
   userId: number;
 }
+
+export interface SubscriptionForm
+  extends Omit<Subscription, 'userId' | 'gateway' | 'offerId'> {}
