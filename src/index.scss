@@ -1,6 +1,7 @@
 @import '/src/styles/colors';
 
 :root {
+  color: $dark-gray;
   font-family: 'DM Sans', sans-serif;
 }
 
@@ -16,7 +17,7 @@ body {
 }
 
 #root {
-  padding: 30px 68px;
+  padding: 30px;
 }
 
 h1,
