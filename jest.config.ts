@@ -87,6 +87,7 @@ const config = {
   moduleNameMapper: {
     '^@pages/(.*)$': '<rootDir>/src/pages/$1',
     '^@utils/(.*)$': '<rootDir>/src/utils/$1',
+    '^@store/(.*)$': '<rootDir>/src/store/$1',
     '^@assets/(.*)$': '<rootDir>/src/assets/$1',
     '^@services/(.*)$': '<rootDir>/src/services/$1',
     '^@interfaces/(.*)$': '<rootDir>/src/interfaces/$1',
