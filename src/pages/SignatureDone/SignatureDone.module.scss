@@ -1,0 +1,115 @@
+@import '/src/styles/colors';
+@import '/src/styles/variables';
+
+.content {
+  width: fit-content;
+  text-align: center;
+  margin: 90px auto 0;
+
+  &__title {
+    font-weight: 400;
+    line-height: 25px;
+    margin: 18px 0 12px;
+    color: $primary-color;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    max-width: 300px;
+    line-height: 26px;
+    margin: 11px auto 0;
+    color: $grayish-violet;
+  }
+
+  &__icon {
+    padding: 20px;
+    border: 4px solid;
+    border-radius: 50%;
+    color: $primary-color;
+
+    &--normal {
+      height: 50px;
+    }
+
+    &--small {
+      height: 25px;
+      padding: 15px;
+    }
+
+    &--filled {
+      border-color: $light-grayish-violet;
+      background-color: $light-grayish-violet;
+    }
+
+    &--bordered {
+      border-color: $light-grayish;
+    }
+  }
+
+  &__signature {
+    padding: 20px;
+    min-width: 300px;
+    background: $white;
+    margin: 56px 0 88px;
+    border-radius: $default-border-radius;
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 5%);
+  }
+
+  .info {
+    &__signature {
+      display: flex;
+      padding: 15px;
+      align-items: center;
+      background-color: $light-grayish;
+      border-radius: $default-border-radius;
+
+      div {
+        width: 100%;
+        text-align: end;
+        color: $primary-color;
+
+        p {
+          font-size: 18px;
+          margin: 10px 0 10px 20px;
+        }
+      }
+    }
+
+    &__subscriber {
+      gap: 19px;
+      display: flex;
+      padding: 20px 15px;
+      flex-direction: column;
+
+      div {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &__footer {
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+
+    .button {
+      border: 0;
+      width: 100%;
+      font-size: 16px;
+      padding: 17px 0;
+      font-weight: 700;
+      background-color: transparent;
+
+      &--primary {
+        color: $white;
+        background-color: $primary-color;
+        border-radius: $button-border-radius;
+      }
+
+      &--secondary {
+        color: $primary-color;
+      }
+    }
+  }
+}
