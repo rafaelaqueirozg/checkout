@@ -1,6 +1,7 @@
 import { render } from '@testing-library/react';
 import { Checkout } from './Checkout';
 
+jest.mock('@components/Offer/Offer');
 jest.mock('@components/Payment/Payment');
 
 describe('<Checkout />', () => {

@@ -3,3 +3,9 @@
   padding: 60px 0 50px;
   justify-content: space-around;
 }
+
+@media (max-width: 1200px) {
+  .content {
+    flex-direction: column-reverse;
+  }
+}
