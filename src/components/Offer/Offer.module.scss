@@ -1,3 +1,5 @@
+@import '/src/styles/colors';
+
 .offer {
   &__plans {
     margin: 30px 0;
@@ -13,5 +15,29 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media (max-width: 1264px) {
+  .offer {
+    border-width: 80%;
+    margin-bottom: 30px;
+    border-bottom: 1px solid $light-gray;
+
+    &__about {
+      margin-bottom: 30px;
+    }
+
+    &__plans {
+      flex-direction: row;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .offer {
+    &__plans {
+      flex-direction: column;
+    }
   }
 }

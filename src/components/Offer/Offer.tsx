@@ -6,12 +6,12 @@ import {
   getOffers,
   postSubscription,
 } from '@services/Checkout/CheckoutService';
+import { fetchOffers, OfferState } from '@store/ducks/offer';
+import { RootState } from '@store/store';
 import { OfferAdapter } from '@utils/adapters/Offer.adapter';
 import { ReactElement, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { RootState } from 'src/store';
-import { fetchOffers, OfferState } from 'src/store/ducks/offer';
 import styles from './Offer.module.scss';
 
 export const Offer = (): ReactElement => {
@@ -58,6 +58,7 @@ export const Offer = (): ReactElement => {
           <div
             key={offer.id}
             style={{
+              flex: 1,
               order: offer.order,
             }}
           >
